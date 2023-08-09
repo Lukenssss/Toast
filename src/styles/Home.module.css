@@ -1,0 +1,274 @@
+.container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colors-back);
+}
+
+.signIn {
+    cursor: pointer;
+    background-color: var(--colors-btn-back);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    border-radius: 8px;    
+    border: 1px solid var(--colors-btn-border);
+    box-shadow: var(--colors-btn-shadow) 0px 1px 2px;
+}
+
+.iconOne {
+    color: var(--colors-discord);
+}
+
+.user {
+    float: left;
+    vertical-align: top;
+    background-color: var(--colors-btn-back);
+    border-radius: 8px;
+    padding: 15px;
+    color: var(--colors-polar);
+    border: none;
+    outline: none;
+}
+
+.files {
+    float: left;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    border: 2px dashed var(--colors-btn-back);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.fileIcon {
+    color: var(--colors-gray);
+}
+
+.send {
+    border: none;
+    border-radius: 6px;
+    background-color: var(--colors-btn-back);
+    color: var(--colors-soft);
+    vertical-align: bottom;
+}
+
+.check {
+    color: var(--colors-spotify);
+}
+
+.icon {
+    border-radius: 99999px;
+}
+
+.logo {
+    color: var(--colors-soft);
+    font-size: 60px;
+    position: absolute;
+    top: 12vh;
+}
+
+.avatar {
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .send {
+        font-size: 15px;
+        position: absolute;
+        bottom: 25vh;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .check {
+        font-size: 30px;
+    }
+
+    .user {
+        position: absolute;
+        top: 25vh;
+        width: 27vw;
+        height: 4vh;
+        font-size: 15px;
+    }
+ 
+    .files {
+        position: absolute;
+        top: 37.5vh;
+        width: 60vw;
+        height: 25vh;
+    }
+
+    .fileIcon {
+        font-size: 30px;
+    }
+
+    .signIn {
+        width: 60vw;
+        height: 10vh;
+        font-size: 40px;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        width: 50px;
+        height: 50px;
+    }
+}
+  
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .signIn {
+        width: 60vw;
+        height: 10vh;
+        font-size: 40px;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        width: 50px;
+        height: 50px;
+    }
+
+    .send {
+        font-size: 15px;
+        position: absolute;
+        bottom: 30vh;
+        width: 23vw;
+        height: 5vh;
+    }
+
+    .check {
+        font-size: 30px;
+    }
+
+    .user {
+        position: absolute;
+        top: 22.5vh;
+        width: 35vw;
+        height: 3.5vh;
+        font-size: 15px;
+    }
+ 
+    .files {
+        position: absolute;
+        top: 35vh;
+        width: 60vw;
+        height: 25vh;
+    }
+
+    .fileIcon {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .signIn {
+        width: 25vw;
+        height: 10vh;
+        font-size: 40px;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        width: 50px;
+        height: 50px;
+    }
+
+    .check {
+        font-size: 30px;
+    }
+
+    .send {
+        font-size: 15px;
+        position: absolute;
+        bottom: 25vh;
+        width: 20vw;
+        height: 5vh;
+    }
+
+    .user {
+        position: absolute;
+        top: 25vh;
+        width: 27vw;
+        height: 4vh;
+        font-size: 15px;
+    }
+ 
+    .files {
+        position: absolute;
+        top: 37.5vh;
+        width: 60vw;
+        height: 25vh;
+    }
+
+    .fileIcon {
+        font-size: 30px;
+    }
+}
+    
+@media only screen and (min-width: 1279px) {
+    .signIn {
+        width: 15vw;
+        height: 9vh;
+        font-size: 40px;
+    }
+
+    .send {
+        font-size: 15px;
+        position: absolute;
+        bottom: 30vh;
+        width: 9vw;
+        height: 7vh;
+    }
+
+    .user {
+        position: absolute;
+        top: 22.5vh;
+        width: 17vw;
+        height: 5vh;
+        font-size: 15px;
+    }
+ 
+    .files {
+        position: absolute;
+        top: 35vh;
+        width: 25vw;
+        height: 25vh;
+    }
+
+    .fileIcon {
+        font-size: 30px;
+    }
+
+    .check {
+        font-size: 30px;
+    }
+
+    .avatar {
+        position: absolute;
+        top: 5vh;
+        right: 5vw;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .icon {
+        width: 75px;
+        height: 75px;
+    }
+}

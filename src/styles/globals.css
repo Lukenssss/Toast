@@ -1,0 +1,28 @@
+:root {
+    --colors-polar: #FFFFFF;
+    --colors-dark: #000000;
+    --colors-twitch: #9046FF;
+    --colors-discord: #7488db;
+    --colors-soft: #EFEFEF;
+    --colors-spotify: #89E219;
+    --colors-youtube: #FF0000;
+    --colors-back: #0f0f10;
+    --colors-font: #010101;
+    --colors-btn-back: #f3f2ee14;
+    --colors-btn-shadow: #0F0F0F0D;
+    --colors-btn-border: #0F0F0F26;
+    --colors-ebtn-color: #EB5757;
+    --colors-ebtn-shadow-one: #0F0F0F1A;
+    --colors-ebtn-shadow-two: #EB57574D;
+    --colors-ebtn-back: #FDF5F2;
+    --colors-gray: #808080;
+    --colors-email-back: #F2F1EE99;
+    --colors-line: #37352F29;
+}
+
+* {
+    overflow: hidden;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
