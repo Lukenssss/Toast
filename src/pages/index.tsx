@@ -31,7 +31,7 @@ export default function Home() {
     const socket = io('https://tongue-7udk.onrender.com')
     const { data: session } = useSession()
 
-    const fileUpload = useRef<HTMLInputElement>()
+    const fileUpload = useRef<HTMLInputElement>(null)
 
     const [loaded, setLoaded] = useState(false)
     const [user, setUser] = useState('')
