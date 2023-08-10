@@ -12,6 +12,7 @@ import ConfettiExplosion from 'react-confetti-explosion'
 import { BiLogoDiscord, BiLogoSpotify } from 'react-icons/bi'
 import { io } from 'socket.io-client'
 import { CgFile, CgCheck } from 'react-icons/cg'
+import ReactConfetti from 'react-confetti'
 
 const interNormal = Inter({
     subsets: ['cyrillic'],
@@ -124,6 +125,12 @@ export default function Home() {
                 <div className={styles.container}>
                     <img title={'Sign Out'} onClick={() => signOut()} src={session.user?.image as string} className={styles.avatar} alt={''} />
 
+                    <ReactConfetti 
+                        run={uploaded}
+                        recycle={false}
+                        tweenDuration={3000}
+                    />
+
                     <input style={feather.style} type={'text'} placeholder={'Reciever'} className={styles.user} value={user} onChange={(e) => setUser(e.target.value)} />
 
                     <div onClick={() => {
@@ -136,11 +143,16 @@ export default function Home() {
 
                     <input type={'file'} placeholder={''} style={{
                         display: 'none',
-                    }} ref={fileUpload} onChange={(e) => {
+                    }} ref={fileUpload} onChange={async (e) => {
                         if (!e.target.files) {
                             return
                         } else {
                             setFile(e.target.files[0])
+                            setUploaded(true)
+
+                            await new Promise(r => setTimeout(r, 15000))
+
+                            setUploaded(false)
                         }
                     }} />
                 </div>
